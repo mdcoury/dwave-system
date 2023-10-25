@@ -766,9 +766,9 @@ class LeapHybridCQMSampler:
         """Return the minimum `time_limit`, in seconds, accepted for the given problem."""
 
         # todo: remove the hard-coded defaults
-        num_variables_multiplier = self.properties.get('num_variables_multiplier', 1.57e-04)
-        num_biases_multiplier = self.properties.get('num_biases_multiplier', 4.65e-06)
-        num_constraints_multiplier = self.properties.get('num_constraints_multiplier', 6.44e-09)
+        num_variables_multiplier = self.properties.get('num_variables_multiplier', -6.48763764e-04)
+        num_biases_multiplier = self.properties.get('num_biases_multiplier', 4.32152066e-05)
+        num_constraints_multiplier = self.properties.get('num_constraints_multiplier', -5.08381484e-03)
         minimum_time_limit = self.properties['minimum_time_limit_s']
 
         num_variables = len(cqm.variables)
